@@ -9,6 +9,7 @@ Default: 400
 Medium: 500 
 Semi-bold: 600
 Bold: 700
+
 - Line heights:
 Default: 1
 Small: 1.05
@@ -20,6 +21,9 @@ Paragraph: 1.6
 0.75px
 
 --- 02 COLORS: 
+#51cf66
+#94d82d
+#ffd43b
 
 - Primary:#e67e22 
 
@@ -27,7 +31,10 @@ Paragraph: 1.6
 #fae5d3
 - Shades:#cf711f
 - Accents:
-- Greys: #555 #333
+- Greys: 
+#555 
+#333 
+#6F6F6F (lightest grey allowed on #fdf2e9)
 
 --- 03 SHADOWS:
 
@@ -351,12 +358,19 @@ body {
 /* ****************************** */
 
 .section-testimonials {
-  padding: 9.6rem 0;
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
 }
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+.testimonials-container {
+  padding: 9.6rem;
 }
 .testimonial-img {
   width: 6.4rem;
@@ -371,5 +385,22 @@ body {
 
 .testimonial-name {
   font-size: 1.6rem;
-  color: #777;
+  color: #6f6f6f;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+.gallery-item {
+  overflow: hidden;
 }
