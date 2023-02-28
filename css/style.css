@@ -54,7 +54,7 @@
 /* MOBILE */
 .btn-mobile-nav {
   border: none;
-  background-color: none;
+  background-color: #fdf2e9;
   cursor: pointer;
   display: none;
 }
