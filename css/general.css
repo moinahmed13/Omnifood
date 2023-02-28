@@ -58,9 +58,29 @@ Default: 9px
 Medium: 11px
 
 --- 05 WHITESPACE:
-
-
 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+
+  /* ONLY WORKS IF THERE IN NOTHING ABSOLUTE POSITIONED IN RELATION TO THE BODY */
+  overflow-x: hidden;
+}
 
 /* ****************************** */
 /* GENERAL REUSEABLE COMPONENTS */
