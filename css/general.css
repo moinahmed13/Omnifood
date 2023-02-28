@@ -19,6 +19,7 @@ Default: 1
 Small: 1.05
 Mediom: 1.2
 Paragraph: 1.6
+Large: 1.8
 
 -Letter-spacing
 -0.5px
@@ -210,6 +211,7 @@ Medium: 11px
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 *:focus {
