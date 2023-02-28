@@ -49,6 +49,9 @@ Instead, 1rem = 1em = 16px */
   }
   .gallery-item img {
   }
+  .testimonials-container {
+    padding: 9.6em 3.2em;
+  }
 }
 
 /* 
